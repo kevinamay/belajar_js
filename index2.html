@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+
+<div>
+
+    <input placeholder="masukkan nama depan " id="depan" type="text">
+    <input placeholder="masukkan nama belakang " id="belakang" type="text">
+    <button id="buttongabung">gabung</button>
+</div>
+
+<div id="namalengkap">
+
+</div>
+
+
+</body>
+    <script > 
+
+    let namadepan = document.getElementById('depan');
+    let namabelakang = document.getElementById('belakang');
+    let namalengkap = document.getElementById('namalengkap');
+    function tampilnama(){
+        if (namadepan.value == '')
+        {
+            alert('nama depan tidak boleh kosong');
+            return;
+        }
+        else if (namabelakang.value == '')
+        {
+            alert('nama belakang tidak boleh kosong');
+            return;
+        }
+        let title = 'nama lengkap anda adalah '
+        let namagabung = namadepan.value +  namabelakang.value;
+        namalengkap.innerHTML = title  + '  '  + namagabung;
+    }
+    document.getElementById("buttongabung").addEventListener("click", tampilnama);
+
+    </script>
+</html>

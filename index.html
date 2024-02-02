@@ -10,7 +10,7 @@
         belajar javascript
     </div>
     <script>
-        
+
         // kondisi dan operator
         // let umur = 20;
         // let alamat = 'ponorogo';
@@ -61,6 +61,24 @@
         // do {
         //     console.log('kevina')
         // } while(i<10)
+
+        // tugas kecil menampilkan saldo
+        let saldo = prompt("Masukan Saldo Awal : ");
+alert("Saldo Awal Anda Adalah : " + saldo);
+let saldotambahan = prompt("Masukan Saldo Tambahan : ");
+let jumlahsaldo = parseInt(saldo) + parseInt(saldotambahan);
+alert('saldo total anda sekarang adalah' + jumlahsaldo);
+
+
+
+//confirm untuk mengetahui apakah user ingin menghapus data atau tidak
+let hapus = confirm("Apakah Anda Yakin Ingin Menghapus Data Ini ?");
+if (hapus == true) {
+    alert("Data Berhasil Dihapus");
+} else {
+    alert("Data Tidak Jadi Dihapus");
+}
+
     </script>
 </body>
 </html>
